@@ -1675,7 +1675,7 @@ function renderQrCode(shorLinkURL, deepLinkURL, androidData, iosData, otherPlatf
 
 
     ///////////////////////////////////////////////////
-    export class ZeroPassPortWidget extends React.Component{
+    class ZeroPassPortWidget extends React.Component{
         state = { 
             androidData: {}, // example: {"apn":"<apn>", "afl":"<afl>","version":'<version>'}
             iosData: {}, // {"ibi":"<ibi>", "isi":"<isi>", "imv":<imv>}
@@ -1878,3 +1878,6 @@ function renderQrCode(shorLinkURL, deepLinkURL, androidData, iosData, otherPlatf
 function createWidget(shorLinkURL, deepLinkURL, androidData, iosData,otherPlatformsLink, options) {
     renderQrCode(shorLinkURL, deepLinkURL, androidData, iosData, otherPlatformsLink, options);
     }
+
+
+export default ZeroPassPortWidget;

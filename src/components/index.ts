@@ -1,0 +1,1 @@
+export { default as ZeroPassPortWidget } from './browser-link-for-port-apps'
